@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu primeiro site!</title>
+  <style>
+    /* Estilização do CSS na página */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #16171d;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #444;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+    }
+    nav a:hover {
+      background-color: #555;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    h2{
+        color: #4fd7e9;
+    }
+    p {
+      text-align: justify;
+      color: #fff;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #fff;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    textarea {
+      height: 150px;
+    }
+    input[type="submit"] {
+      background-color: #4fd7e9;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #2e9ab8;
+    }
+    footer {
+      text-align: center;
+      color: #4fd7e9;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Meu primeiro site!</h1> 
+  </header>
+  <!-topo da página->
+  <nav>
+    <a href="#sobre">Sobre Mim</a>
+    <a href="#formacao">Formação</a>
+    <a href="#portfolio">Portfólio</a>
+    <a href="#contato">Contato</a>
+  </nav>
+  <div class="container">
+    <section id="sobre">
+      <h2>Sobre Mim</h2>
+      <p>Olá! Me chamo Mariele Camargo e seja bem vindo ao meu primeiro site!</p>
+      <p>Atualmente estou cursando Análise e Desinvolvimento de Sistemas na faculdade UNINTER.
+        É minha primeira faculdade então estou me esforçando bastante, principalmente porque também é a primeira vez que tenho contato direto com a área de programação em geral, mas estou me adaptando bem.
+        Tenho o objetivo de trabalhar nessa área futuramente e expandir cada vez mais meu conhecimento com cursos extras e estudos para aprofundamento.
+        Sou uma pessoa tranquila, adoro passar tempo com a minha namorada e minha família. Ouvir músicas, ler e jogar online são hobbies que tenho e gosto muito.
+        Nasci em uma cidadezinha bem pequena do interior, mas hoje moro em Bauru-SP.</p>
+    </section>
+
+    <section id="formacao">
+        <h2>Formação</h2>
+      <ol>
+      <p>Ensino Médio completo;</p>
+      <p>Técino em Administração;</p>
+      <p>Cursando Análise e Desenvolvimento de Sistemas na UNINTER;</p>
+      </ol>
+    </section>
+    
+    <section id="portfolio">
+      <h2>Portfólio</h2>
+      <p>Prototipação baseada em um aplicativo de compras e consultas de vinhos chamado EVINO.</p>
+      <img src="EVINO.png" alt="Imagem da logo da EVINO" title="LOGO EVINO" width="50%">
+      <br>
+      <a style="color: #a53a3a;" href="https://www.figma.com/proto/qm3IAnjjvWkOc87lMFq641/App-de-Compras?type=design&node-id=1-8&t=xzoOqsvyr1wa6gqu-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A8&mode=design" >Protótipo EVINO</a>
+    </section>
+    <br>
+    <section id="contato">
+      <h2>Contato</h2>
+        <div class="form-group">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <div class="form-group">
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem"></textarea>
+        </div>
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+  </div>
+<footer>
+  © Mariele Camargo 2024
+</footer>
+</body>
+</html>
